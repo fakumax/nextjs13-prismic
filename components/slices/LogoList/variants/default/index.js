@@ -1,18 +1,17 @@
-import { SliceFactory } from "../../../../common/Containers";
-import { Description, Content, ImgHolder } from "./defaultStyles";
-import { RichText } from "prismic-reactjs";
+import { SliceFactory } from '../../../../common/Containers';
+import { Description, Content, ImgHolder } from './defaultStyles';
+import { PrismicRichText } from '@prismicio/react';
 import LogoList from '../../../../common/LogoList';
 
 const Base = (props) => {
-
   const { description, title } = props.primary;
 
   return (
     <Content>
       <Description>
-        {title[0]?.text ? RichText.render(title) : <h3>Title</h3>}
+        {title[0]?.text ? <PrismicRichText field={title} /> : <h3>Title</h3>}
         {description[0]?.text ? (
-          RichText.render(description)
+          <PrismicRichText field={description} />
         ) : (
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
