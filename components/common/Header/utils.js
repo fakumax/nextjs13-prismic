@@ -16,9 +16,8 @@ const LinkPage = (data, pagename) => {
     <>
       <Link
         key={`top-nav-${data.id}`}
-        href={data.url === '' ? `/${linkResolver(dataMenu)}` : data.url}
+        href={data.url === '' ? `${linkResolver(dataMenu)}` : data.url}
         passHref
-        prefetch
       >
         {/* <a id={data.id} className={data.uid === pagename ? 'selected' : ''}>
           <motion.li className='nav-item' animate>
