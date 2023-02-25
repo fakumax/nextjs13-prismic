@@ -1,0 +1,1001 @@
+{
+  "slices": {
+    "components": {
+      "card_list": {
+        "library": "slices",
+        "id": "card_list",
+        "name": "CardList",
+        "description": "CardList",
+        "model": {
+          "id": "card_list",
+          "type": "SharedSlice",
+          "name": "CardList",
+          "description": "CardList",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "CardList",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading3,heading2,paragraph,preformatted,heading4,heading5,heading6,strong,em"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,strong,em,embed,rtl"
+                  }
+                }
+              },
+              "items": {
+                "cardTitle": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "cardTitle",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "heading3,heading4,heading5,heading6,em,strong"
+                  }
+                },
+                "cardDescription": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "cardDescription",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading5,heading6,strong,em,hyperlink"
+                  }
+                },
+                "cardImage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "cardImage",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "cardTitle": [
+                  {
+                    "type": "heading3",
+                    "text": "Prevent",
+                    "spans": []
+                  }
+                ],
+                "cardDescription": [
+                  {
+                    "type": "paragraph",
+                    "text": "Nisi labore id pariatur eu qui qui eu voluptate mollit consequat nostrud eu commodo non. Anim exercitation exercitation minim.",
+                    "spans": []
+                  }
+                ],
+                "cardImage": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da"
+                }
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "paragraph",
+                  "text": "Et ut eu velit proident adipisicing elit eiusmod labore ad aliqua dolore. Magna sunt irure deserunt do labore dolor do culpa exercitation consequat ea amet officia.",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Ad sunt irure dolor labore incididunt velit. Laborum sit aliqua ullamco do laboris ea.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "card_list"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/manu/_CODE/ENERGICA/PLATFORM-PROJECTS/website-platform-projects/slices/CardList/default/preview.png",
+            "width": 1524,
+            "height": 789
+          }
+        }
+      },
+      "hero": {
+        "library": "slices",
+        "id": "hero",
+        "name": "Hero",
+        "description": "Hero",
+        "model": {
+          "id": "hero",
+          "type": "SharedSlice",
+          "name": "Hero",
+          "description": "Hero",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Hero",
+              "primary": {
+                "invertedlayout": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "invertedLayout",
+                    "default_value": false,
+                    "placeholder_true": "true",
+                    "placeholder_false": "false"
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading1,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "buttontext": {
+                  "type": "Text",
+                  "config": {
+                    "label": "buttonText",
+                    "placeholder": ""
+                  }
+                },
+                "buttonlink": {
+                  "type": "Link",
+                  "config": {
+                    "label": "buttonLink",
+                    "placeholder": "",
+                    "select": null
+                  }
+                },
+                "mobileimage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "mobileImage",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "noButtonNoDescription",
+              "name": "noButtonNoDescription",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Hero",
+              "primary": {
+                "invertedlayout": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "invertedLayout",
+                    "default_value": false,
+                    "placeholder_true": "true",
+                    "placeholder_false": "false"
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading1,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "mobileimage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "mobileImage",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "noButton",
+              "name": "noButton",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Hero",
+              "primary": {
+                "invertedlayout": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "invertedLayout",
+                    "default_value": false,
+                    "placeholder_true": "true",
+                    "placeholder_false": "false"
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,heading1,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "mobileimage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "mobileImage",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "invertedlayout": true,
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f"
+              },
+              "title": [
+                {
+                  "type": "paragraph",
+                  "text": "Duis labore id laborum pariatur laborum excepteur ipsum fugiat ex deserunt labore quis est. Deserunt fugiat excepteur ut reprehenderit tempor nisi. Adipisicing enim culpa labore magna sunt nulla exercitation ex enim ex.",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Velit exercitation laboris elit aute occaecat deserunt dolor enim non cillum qui elit veniam dolore.",
+                  "spans": []
+                }
+              ],
+              "buttontext": "prove",
+              "buttonlink": {
+                "link_type": "Web",
+                "url": "http://google.com"
+              },
+              "mobileimage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b"
+              }
+            },
+            "slice_type": "hero"
+          },
+          "noButtonNoDescription": {
+            "variation": "noButtonNoDescription",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "invertedlayout": false,
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a"
+              },
+              "title": [
+                {
+                  "type": "paragraph",
+                  "text": "Ipsum ex exercitation elit cupidatat id Lorem officia do ut Lorem magna.",
+                  "spans": []
+                }
+              ],
+              "mobileimage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5"
+              }
+            },
+            "slice_type": "hero"
+          },
+          "noButton": {
+            "variation": "noButton",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "invertedlayout": true,
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853"
+              },
+              "title": [
+                {
+                  "type": "paragraph",
+                  "text": "Amet elit deserunt tempor ut enim. Esse do proident laboris labore in aliquip sint veniam do. Dolor consectetur laborum cupidatat incididunt aliquip cillum ea aliquip excepteur ut nostrud voluptate labore ea eu.",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Commodo eiusmod occaecat aliquip eu occaecat. Irure excepteur excepteur aute ut deserunt amet eiusmod proident eiusmod aute culpa incididunt minim. Nisi deserunt ut eu aliqua elit qui tempor nisi laboris.",
+                  "spans": []
+                }
+              ],
+              "mobileimage": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f"
+              }
+            },
+            "slice_type": "hero"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/manu/_CODE/ENERGICA/PLATFORM-PROJECTS/website-platform-projects/slices/Hero/default/preview.png",
+            "width": 1523,
+            "height": 640
+          },
+          "noButtonNoDescription": {
+            "path": "/Users/manu/_CODE/ENERGICA/PLATFORM-PROJECTS/website-platform-projects/slices/Hero/noButtonNoDescription/preview.png",
+            "width": 1523,
+            "height": 640
+          },
+          "noButton": {
+            "path": "/Users/manu/_CODE/ENERGICA/PLATFORM-PROJECTS/website-platform-projects/slices/Hero/noButton/preview.png",
+            "width": 1523,
+            "height": 640
+          }
+        }
+      },
+      "ideas": {
+        "library": "slices",
+        "id": "ideas",
+        "name": "Ideas",
+        "description": "Ideas",
+        "model": {
+          "id": "ideas",
+          "type": "SharedSlice",
+          "name": "Ideas",
+          "description": "Ideas",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Ideas",
+              "primary": {
+                "subtittle": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "subtittle",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading3"
+                  }
+                },
+                "tittle": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "tittle",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "buttontext": {
+                  "type": "Text",
+                  "config": {
+                    "label": "buttonText",
+                    "placeholder": ""
+                  }
+                },
+                "buttonlink": {
+                  "type": "Link",
+                  "config": {
+                    "label": "buttonLink",
+                    "placeholder": "",
+                    "select": null
+                  }
+                },
+                "bgcolorInitial": {
+                  "type": "Color",
+                  "config": {
+                    "label": "bgColorInitial",
+                    "placeholder": ""
+                  }
+                },
+                "bgcolorend": {
+                  "type": "Color",
+                  "config": {
+                    "label": "bgColorEnd",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "noButtonNobg",
+              "name": "noButtonNobg",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Ideas",
+              "primary": {
+                "subtittle": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "subtittle",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading3"
+                  }
+                },
+                "tittle": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "tittle",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "noButton",
+              "name": "noButton",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Ideas",
+              "primary": {
+                "subtittle": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "subtittle",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading3"
+                  }
+                },
+                "tittle": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "tittle",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading2"
+                  }
+                },
+                "bgcolorInitial": {
+                  "type": "Color",
+                  "config": {
+                    "label": "bgColorInitial",
+                    "placeholder": ""
+                  }
+                },
+                "bgcolorend": {
+                  "type": "Color",
+                  "config": {
+                    "label": "bgColorEnd",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "subtittle": [
+                {
+                  "type": "heading3",
+                  "text": "Silly",
+                  "spans": []
+                }
+              ],
+              "tittle": [
+                {
+                  "type": "heading2",
+                  "text": "Weigh",
+                  "spans": []
+                }
+              ],
+              "buttontext": "rabbit",
+              "buttonlink": {
+                "link_type": "Web",
+                "url": "http://google.com"
+              },
+              "bgcolorInitial": "#41424b",
+              "bgcolorend": "#3726f4"
+            },
+            "slice_type": "ideas"
+          },
+          "noButtonNobg": {
+            "variation": "noButtonNobg",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "subtittle": [
+                {
+                  "type": "heading3",
+                  "text": "Principle",
+                  "spans": []
+                }
+              ],
+              "tittle": [
+                {
+                  "type": "heading2",
+                  "text": "Curve",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "ideas"
+          },
+          "noButton": {
+            "variation": "noButton",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "subtittle": [
+                {
+                  "type": "heading3",
+                  "text": "Beauty",
+                  "spans": []
+                }
+              ],
+              "tittle": [
+                {
+                  "type": "heading2",
+                  "text": "Easily",
+                  "spans": []
+                }
+              ],
+              "bgcolorInitial": "#c473d5",
+              "bgcolorend": "#73a814"
+            },
+            "slice_type": "ideas"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/manu/_CODE/ENERGICA/PLATFORM-PROJECTS/website-platform-projects/slices/Ideas/default/preview.png",
+            "width": 1524,
+            "height": 382
+          },
+          "noButtonNobg": {
+            "path": "/Users/manu/_CODE/ENERGICA/PLATFORM-PROJECTS/website-platform-projects/slices/Ideas/noButtonNobg/preview.png",
+            "width": 1524,
+            "height": 382
+          },
+          "noButton": {
+            "path": "/Users/manu/_CODE/ENERGICA/PLATFORM-PROJECTS/website-platform-projects/slices/Ideas/noButton/preview.png",
+            "width": 1524,
+            "height": 382
+          }
+        }
+      },
+      "logo_list": {
+        "library": "slices",
+        "id": "logo_list",
+        "name": "LogoList",
+        "description": "LogoList",
+        "model": {
+          "id": "logo_list",
+          "type": "SharedSlice",
+          "name": "LogoList",
+          "description": "LogoList",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "LogoList",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading3,heading4,heading5,heading2"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph"
+                  }
+                }
+              },
+              "items": {
+                "logoImage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "logoImage",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "onlyLogosBg",
+              "name": "onlyLogosBg",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "LogoList",
+              "primary": {},
+              "items": {
+                "logoImage": {
+                  "type": "Image",
+                  "config": {
+                    "label": "logoImage",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "logoImage": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea"
+                }
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading3",
+                  "text": "Remarkable",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Officia nulla cupidatat excepteur esse tempor ut culpa voluptate est cupidatat deserunt. Elit et dolor in quis.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "logo_list"
+          },
+          "onlyLogosBg": {
+            "variation": "onlyLogosBg",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "logoImage": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea"
+                }
+              }
+            ],
+            "primary": {},
+            "slice_type": "logo_list"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/manu/_CODE/ENERGICA/PLATFORM-PROJECTS/website-platform-projects/slices/LogoList/default/preview.png",
+            "width": 1524,
+            "height": 400
+          },
+          "onlyLogosBg": {
+            "path": "/Users/manu/_CODE/ENERGICA/PLATFORM-PROJECTS/website-platform-projects/slices/LogoList/onlyLogosBg/preview.png",
+            "width": 1524,
+            "height": 126
+          }
+        }
+      },
+      "metrics": {
+        "library": "slices",
+        "id": "metrics",
+        "name": "Metrics",
+        "description": "Metrics",
+        "model": {
+          "id": "metrics",
+          "type": "SharedSlice",
+          "name": "Metrics",
+          "description": "Metrics",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Metrics",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading1,heading2"
+                  }
+                }
+              },
+              "items": {
+                "contenttext": {
+                  "type": "Text",
+                  "config": {
+                    "label": "contentText",
+                    "placeholder": ""
+                  }
+                },
+                "subtitle": {
+                  "type": "Text",
+                  "config": {
+                    "label": "subtitle",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            },
+            {
+              "id": "noBackground",
+              "name": "noBackground",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Metrics",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "heading1,heading2"
+                  }
+                }
+              },
+              "items": {
+                "contenttext": {
+                  "type": "Text",
+                  "config": {
+                    "label": "contentText",
+                    "placeholder": ""
+                  }
+                },
+                "subtitle": {
+                  "type": "Text",
+                  "config": {
+                    "label": "subtitle",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "contenttext": "chance",
+                "subtitle": "invented"
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Settlers",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "metrics"
+          },
+          "noBackground": {
+            "variation": "noBackground",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "contenttext": "it",
+                "subtitle": "black"
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Brain",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "metrics"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/Users/manu/_CODE/ENERGICA/PLATFORM-PROJECTS/website-platform-projects/slices/Metrics/default/preview.png",
+            "width": 1524,
+            "height": 535
+          },
+          "noBackground": {
+            "path": "/Users/manu/_CODE/ENERGICA/PLATFORM-PROJECTS/website-platform-projects/slices/Metrics/noBackground/preview.png",
+            "width": 1524,
+            "height": 535
+          }
+        }
+      }
+    }
+  }
+}

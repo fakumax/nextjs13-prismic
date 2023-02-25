@@ -1,0 +1,83 @@
+[
+  {
+    "variation": "default",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
+    "primary": {
+      "subtittle": [
+        {
+          "type": "heading3",
+          "text": "Silly",
+          "spans": []
+        }
+      ],
+      "tittle": [
+        {
+          "type": "heading2",
+          "text": "Weigh",
+          "spans": []
+        }
+      ],
+      "buttontext": "rabbit",
+      "buttonlink": {
+        "link_type": "Web",
+        "url": "http://google.com"
+      },
+      "bgcolorInitial": "#41424b",
+      "bgcolorend": "#3726f4"
+    },
+    "slice_type": "ideas"
+  },
+  {
+    "variation": "noButtonNobg",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
+    "primary": {
+      "subtittle": [
+        {
+          "type": "heading3",
+          "text": "Principle",
+          "spans": []
+        }
+      ],
+      "tittle": [
+        {
+          "type": "heading2",
+          "text": "Curve",
+          "spans": []
+        }
+      ]
+    },
+    "slice_type": "ideas"
+  },
+  {
+    "variation": "noButton",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
+    "primary": {
+      "subtittle": [
+        {
+          "type": "heading3",
+          "text": "Beauty",
+          "spans": []
+        }
+      ],
+      "tittle": [
+        {
+          "type": "heading2",
+          "text": "Easily",
+          "spans": []
+        }
+      ],
+      "bgcolorInitial": "#c473d5",
+      "bgcolorend": "#73a814"
+    },
+    "slice_type": "ideas"
+  }
+]

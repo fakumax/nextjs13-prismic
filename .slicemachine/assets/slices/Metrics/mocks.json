@@ -1,0 +1,42 @@
+[
+  {
+    "variation": "default",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {
+        "contenttext": "chance",
+        "subtitle": "invented"
+      }
+    ],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Settlers",
+          "spans": []
+        }
+      ]
+    },
+    "slice_type": "metrics"
+  },
+  {
+    "variation": "noBackground",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {
+        "contenttext": "it",
+        "subtitle": "black"
+      }
+    ],
+    "primary": {
+      "title": [
+        {
+          "type": "heading1",
+          "text": "Brain",
+          "spans": []
+        }
+      ]
+    },
+    "slice_type": "metrics"
+  }
+]

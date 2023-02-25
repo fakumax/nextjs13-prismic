@@ -1,0 +1,47 @@
+{
+  "id": "homepage",
+  "label": "homepage",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "seotitle": {
+        "type": "Text",
+        "config": {
+          "label": "seotitle",
+          "placeholder": ""
+        }
+      },
+      "seodescription": {
+        "type": "Text",
+        "config": {
+          "label": "seodescription",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "hero": {
+              "type": "SharedSlice"
+            },
+            "ideas": {
+              "type": "SharedSlice"
+            },
+            "card_list": {
+              "type": "SharedSlice"
+            },
+            "logo_list": {
+              "type": "SharedSlice"
+            },
+            "metrics": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

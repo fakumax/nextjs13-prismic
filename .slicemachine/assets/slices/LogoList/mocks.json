@@ -1,0 +1,55 @@
+[
+  {
+    "variation": "default",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {
+        "logoImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea"
+        }
+      }
+    ],
+    "primary": {
+      "title": [
+        {
+          "type": "heading3",
+          "text": "Remarkable",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Officia nulla cupidatat excepteur esse tempor ut culpa voluptate est cupidatat deserunt. Elit et dolor in quis.",
+          "spans": []
+        }
+      ]
+    },
+    "slice_type": "logo_list"
+  },
+  {
+    "variation": "onlyLogosBg",
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {
+        "logoImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea"
+        }
+      }
+    ],
+    "primary": {},
+    "slice_type": "logo_list"
+  }
+]
