@@ -1,20 +1,10 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import { renderedMenuLinks, LinkLogo } from './utils';
 import { Button } from './HeaderStyles';
 
-import {
-  LeftWrap,
-  NavContainer,
-  SectionContainer,
-} from "./HeaderStyles";
+import { LeftWrap, NavContainer, SectionContainer } from './HeaderStyles';
 
-
-
-export const Header = ({
-  header,
-  pagename,
-  activeDocMeta,
-}) => {
+export const Header = ({ header, pagename, activeDocMeta }) => {
   const [open, setOpen] = useState(false);
   const [langToggle, setLangToggle] = useState(false);
   const [countryToggle, setCountryToggle] = useState(false);
@@ -30,10 +20,8 @@ export const Header = ({
         <LinkLogo />
         <LeftWrap>
           <ul>{renderedMenuLinks(menuLinks, pagename)}</ul>
-          <div className="button-container">
-            <Button>
-              {buttontext ? buttontext : `Acceso`}
-            </Button>
+          <div className='button-container'>
+            <Button>{buttontext ? buttontext : 'Acceso'}</Button>
           </div>
         </LeftWrap>
       </SectionContainer>

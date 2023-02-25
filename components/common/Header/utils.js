@@ -33,7 +33,7 @@ const LinkPage = (data, pagename) => {
 };
 
 export const LinkLogo = () => (
-  <Link href={`/`} passHref>
+  <Link href={'/'} passHref>
     logo
     {/* <Logo width={"48"} height={"33"} /> */}
   </Link>
@@ -64,10 +64,9 @@ export const renderedMenuLinks = (menuLinks, pageName) =>
         const { label, link } = menuLink;
         if (validNavbarLink(menuLink)) {
           return (
-            <>
+            <li key={`${index} _menu_links`}>
               <LinkPage
                 pageName={pageName}
-                key={index + '_menu_links'}
                 uid={link?.uid || ''}
                 lang={link?.lang || ''}
                 type={link?.type || ''}
@@ -76,7 +75,7 @@ export const renderedMenuLinks = (menuLinks, pageName) =>
                 slug={link?.slug || '#'}
                 url={link?.url || ''}
               />
-            </>
+            </li>
           );
         }
       })
