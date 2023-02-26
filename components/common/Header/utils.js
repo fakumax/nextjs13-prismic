@@ -12,20 +12,17 @@ const LinkPage = (data, pagename) => {
       url: data.url,
     },
   };
+  const nameClass = data.uid === pagename ? 'selected' : '';
   return (
     <>
       <Link
-        key={`top-nav-${data.id}`}
+        // key={`top-nav-${data.id}`}
         href={data.url === '' ? `${linkResolver(dataMenu)}` : data.url}
+        id={data.id}
         passHref
       >
-        {/* <a id={data.id} className={data.uid === pagename ? 'selected' : ''}>
-          <motion.li className='nav-item' animate>
-            {data.text}
-            <div className='underline'></div>
-          </motion.li>
-        </a> */}
         {data.text}
+        <div className='underline' />
       </Link>
     </>
   );
@@ -63,7 +60,13 @@ export const renderedMenuLinks = (menuLinks, pageName) =>
         const { label, link } = menuLink;
         if (validNavbarLink(menuLink)) {
           return (
-            <li key={`${index} _menu_links`}>
+            <motion.li
+              className={link.uid === pageName ? 'selected' : ''}
+              key={`${index} _menu_links`}
+              animate={{
+                x: -50,
+              }}
+            >
               <LinkPage
                 pageName={pageName}
                 uid={link?.uid || ''}
@@ -74,7 +77,7 @@ export const renderedMenuLinks = (menuLinks, pageName) =>
                 slug={link?.slug || '#'}
                 url={link?.url || ''}
               />
-            </li>
+            </motion.li>
           );
         }
       })

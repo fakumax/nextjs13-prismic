@@ -1,13 +1,13 @@
-import * as prismic from "@prismicio/client";
-import { enableAutoPreviews } from "@prismicio/next";
-import sm from "./sm.json";
+import * as prismic from '@prismicio/client';
+import { enableAutoPreviews } from '@prismicio/next';
+import sm from './sm.json';
 
 /**
  * The project's Prismic repository name.
  */
 export const endpoint = sm.apiEndpoint;
 export const accessToken = sm.apiAccessToken;
-export const defaultLanguage = "es-cl";
+export const defaultLanguage = 'es-cl';
 export const repositoryName = prismic.getRepositoryName(sm.apiEndpoint);
 
 /**
@@ -15,16 +15,16 @@ export const repositoryName = prismic.getRepositoryName(sm.apiEndpoint);
  *
  * @type {prismicH.LinkResolverFunction}
  */
-export const linkResolver = doc => {
+export const linkResolver = (doc) => {
   const properties = doc?._meta || doc;
 
-  if (properties.type === "homepage") {
+  if (properties.type === 'homepage') {
     return properties.lang === defaultLanguage
-      ? "/es-cl/"
+      ? '/es-cl/'
       : `/${properties.lang}`;
   }
 
-  return "/";
+  return '/';
 };
 
 export let repository = {};
@@ -50,9 +50,9 @@ export function createClient(config = {}) {
  */
 
 // Additional helper function for Next/Link component
-export const hrefResolver = doc => {
-  if (doc.type === "homepage") {
-    return `/`;
+export const hrefResolver = (doc) => {
+  if (doc.type === 'homepage') {
+    return '/';
   }
-  return "/";
+  return '/';
 };
