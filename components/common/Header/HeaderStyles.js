@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const container = {
   hidden: { opacity: 0 },
@@ -15,19 +15,18 @@ export const navMenuItems = {
   show: { opacity: 1, x: 0 },
 };
 
-
 export const Button = styled.button`
-    border-radius: 22px;
-    height: 46px;
-    padding: 10px 30px;
-    border: transparent;
-    font-size: 16px;
-    line-height: 24px;
-    width:176px;
-    height:48px;
-    cursor: pointer; 
-    color: ${(props) => props.theme.colors.lightGray2};
-    background: ${(props) => props.theme.colors.bgColorYellow};
+  border-radius: 22px;
+  height: 46px;
+  padding: 10px 30px;
+  border: transparent;
+  font-size: 16px;
+  line-height: 24px;
+  width: 176px;
+  height: 48px;
+  cursor: pointer;
+  color: ${(props) => props.theme.colors.lightGray2};
+  background: ${(props) => props.theme.colors.bgColorYellow};
 `;
 
 export const NavContainer = styled.div`
@@ -86,31 +85,34 @@ export const LeftWrap = styled.div`
   }
   ul {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-    list-style: none;
     height: 100%;
     padding: 0;
-    a {
-      letter-spacing: 0px;
+
+    li {
+      position: relative;
       height: 100%;
-      li {
-        position: relative;
+      padding: 0 20px 0 20px;
+      margin: 0px;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: bold;
+      color: #00113399;
+      transition: color 0.4s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 0px;
+
+      a {
+        letter-spacing: 0px;
         height: 100%;
-        padding: 0 20px 0 20px;
-        margin: 0px;
-        font-size: 14px;
-        line-height: 20px;
-        font-weight: bold;
-        color: #00113399;
-        transition: color 0.4s ease;
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        letter-spacing: 0px;
+        margin: 0px;
+        list-style: none;
+        color: rgba(0, 17, 51, 0.6);
         &:hover {
           color: ${(props) => props.theme.colors.textPrimary};
         }
@@ -127,8 +129,9 @@ export const LeftWrap = styled.div`
         }
       }
     }
-    a.selected {
-      li {
+
+    li a.selected {
+       {
         letter-spacing: 0px;
         color: ${(props) => props.theme.colors.primary};
         .underline {
